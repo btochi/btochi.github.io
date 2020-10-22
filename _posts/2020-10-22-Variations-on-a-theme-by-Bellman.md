@@ -28,7 +28,7 @@ First of all, RL is just very very cool. DeepMind managed to make an agent learn
 
 **Why do I care?**
 
-I love playing games, and I'm specially fond of Backgammon. in 1992 Gerald Tesauro developed TD-Gammon, an RL based program that played at expert level. It was also
+I love playing games, and I'm especially fond of Backgammon. In 1992 Gerald Tesauro developed TD-Gammon, an RL based program that played at expert level. It was also
 one of the first applications of Neural Networks. Given the complexity of Backgammon (over 10^20 states), this is truly remarkable. My goal is to develop enough theory to understand how and why TD-Gammon worked.
 
 I want to take some time to introduce RL basics, and hopefully get you as hyped as I am. I will be following the book by [Sutton and Barto](http://www.incompleteideas.net/book/the-book-2nd.html).
@@ -87,7 +87,7 @@ One interesting thing to note, is that by only considering expected values, we a
 
 # The Bellman Equation
 
-Now we come to the meaty part of this post. Before we move one, take a minute to think how would yo approach the problem of computing the functions above. Or even more broadly, how would you try to find out an optimal policy.
+Now we come to the meaty part of this post. Before we move on, take a minute to think how would yo approach the problem of computing the functions above. Or even more broadly, how would you try to find out an optimal policy.
 
 The Bellman Equations are recursive relations that the value functions satisfy. They impose a condition that actually defines them (i.e. any function satisfying the corresponding Bellman Equation is the corresponding function). Let's deduce the Bellman Equation for $$V_\pi$$
 
@@ -104,7 +104,7 @@ The idea here is to follow the "tree of possibilities" for one time step, and us
 
 **Why are these equation important?**
 
-Well, we have one equation and one unknown $$V_\pi(s)$$ for each state $$s$$. This is a linear system, so we could just solve and find $V_\pi$. More about this later. To finish this section let me state what the other flavors of the Bellman equation look like.
+Well, we have one equation and one unknown $$V_\pi(s)$$ for each state $$s$$. This is a linear system, so we could just solve and find $$V_\pi$$. More about this later. To finish this section let me state what the other flavors of the Bellman equation look like.
 
 $$V_{*}(s) = max_a \sum_{s',r} p(s',r\vert s,a) [r+\gamma\; V_{*}(s')]$$
 
@@ -180,6 +180,8 @@ I ran this code for computing the optimal strategy for Black Jack, assuming an i
 
 The x-axis shows the dealer's card and the y-axis the sum of the cards in the player's hand. Red means stay and green means hit.
 So for example if you get a 10 and a 4, and the dealer shows and ace, you would hit.
+
+You can check out the code [here](https://github.com/btochi/ReinforcementLearning/tree/master/BlackJack)
 
 # Next Steps
 
