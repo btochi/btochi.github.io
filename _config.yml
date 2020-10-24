@@ -27,7 +27,7 @@ url: "moscato" # the base hostname & protocol for your site, e.g. http://example
 twitter_username: guillermotochi
 github_username:  btochi
 linkedin: https://www.linkedin.com/in/guillermo-tochi/
-
+google_analytics: G-7MLG48VZKG
 # Build settings
 theme: minima
 plugins:

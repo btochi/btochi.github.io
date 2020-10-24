@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Variations on a Theme by Bellman"
+
 ---
 
 # Introduction
