@@ -6,7 +6,7 @@ title: "Are we there yet?"
 
 # Introduction
 
-Remember that [last time](http://127.0.0.1:4000/2020/10/22/Variations-on-a-theme-by-Bellman.html) we were left wondering what to do when the state space $$\mathcal{S}$$ was too big. Well, this post is about that.
+Remember that [last time](https://btochi.github.io/2020/10/22/Variations-on-a-theme-by-Bellman.html) we were left wondering what to do when the state space $$\mathcal{S}$$ was too big. Well, this post is about that.
 Once you are done reading this, you'll know how to solve some RL problems with an *infinite* state space. We will again follow the classical [reference](http://www.incompleteideas.net/book/the-book-2nd.html) by Sutton and Barto.
 
 **When faced with complexity one should forego the hope of exact computations and embrace the yoga of estimation.**
